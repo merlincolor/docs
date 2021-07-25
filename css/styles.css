@@ -1,0 +1,159 @@
+body {
+  font-family: "Lucida Grande", Arial, sans-serif;
+  font-size: 13px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-width: 900px; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin-top: 20px;
+  margin-bottom: 8px; }
+
+h1 {
+  font-size: 22px;
+  font-weight: normal;
+  color: #111;
+  border-bottom: 1px dotted #999; }
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111; }
+
+h3, h4, h5, h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444; }
+
+a {
+  color: #125AA7; }
+  a:hover {
+    color: #000; }
+  a img {
+    border: none; }
+
+blockquote {
+  color: #666; }
+
+hr {
+  background: #B2CCFF;
+  color: #B2CCFF; }
+
+table {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+  table th, table td {
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd; }
+
+.quiet {
+  color: #666;
+  font-size: 12px; }
+
+.alt {
+  color: #666; }
+
+p.pagetitle {
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 0.75em;
+  border-bottom: 1px solid #999; }
+
+ul.breadcrumbs {
+  font: 12px Lucida Grande, Arial, sans-serif;
+  background-image: url("/images/breadcrumbs/bc_bg.gif");
+  background-repeat: repeat-x;
+  height: 30px;
+  line-height: 30px;
+  color: #888;
+  border-top: solid 1px #cacaca;
+  border-bottom: solid 1px #cacaca;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  display: block; }
+  ul.breadcrumbs li {
+    list-style-type: none;
+    padding-left: 10px;
+    display: inline-block;
+    float: left; }
+  ul.breadcrumbs a {
+    display: inline-block;
+    background-image: url("/images/breadcrumbs/bc_separator.gif");
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px;
+    text-decoration: none;
+    color: #333;
+    outline: none; }
+    ul.breadcrumbs a:hover {
+      color: #35acc5; }
+  ul.breadcrumbs .home {
+    border: none;
+    margin: 7px 0px; }
+
+#header {
+  display: inline;
+  width: 100%; }
+  #header .title {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    padding: 10px;
+    color: #FFF;
+    background-color: #666; }
+
+#content {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  height: 100%;
+  padding: 10px;
+  clear: both;
+  width: 900px; }
+  #content .toc {
+    font-size: 11px;
+    float: right;
+    clear: none;
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #999; }
+    #content .toc a {
+      text-decoration: none; }
+      #content .toc a:hover {
+        text-decoration: underline; }
+    #content .toc ol {
+      margin-left: 0;
+      padding-left: 2em; }
+  #content .bodytext {
+    float: left;
+    clear: left;
+    width: 660px; }
+    #content .bodytext p {
+      margin-top: 0px;
+      margin-bottom: 12px; }
+    #content .bodytext span.heading-num:after {
+      content: " - "; }
+  #content ol, #content ul {
+    margin-left: 0; }
+    #content ol li,     #content ul li {
+      line-height: 1.5; }
+  #content ol {
+    padding-left: 30px;
+    list-style-position: outside; }
+  #content ul {
+    list-style-type: disc;
+    padding-left: 25px; }
+
+#footer {
+  clear: both;
+  margin-top: 40px; }

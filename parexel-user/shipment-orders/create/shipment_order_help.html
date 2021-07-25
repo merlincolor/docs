@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xml:lang="en-US" lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>
+      Merlin Documentation 
+      Create New Shipment Order
+    </title>
+    <link href="../../../css/styles.css" rel="stylesheet" media="screen, projection" type="text/css" />
+    <!--[if lte IE 7]> 
+      <link href='/css/ie.css' media='screen, projection' rel='stylesheet' type='text/css' />
+    <![endif]-->
+    
+    <script src="../../../js/fancybox/jquery-1.3.2.min.js" type="text/javascript"></script>
+    <script src="../../../js/fancybox/jquery.fancybox-1.2.1.js" type="text/javascript"></script>
+    
+    <link href="../../../js/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" media="screen, projection" />
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+    
+      	/* This is basic - uses default settings */
+    
+      	$("a.zoom").fancybox();
+    
+      	/* Using custom settings */
+    
+      	$("a#inline").fancybox({
+      		'hideOnContentClick': true
+      	});
+    
+      	$("a.group").fancybox({
+      		'zoomSpeedIn':		300, 
+      		'zoomSpeedOut':	  300, 
+      		'overlayShow':		false
+      	});
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="title">Merlin Documentation</div>
+      <!-- = breadcrumbs(@page) -->
+    </div>
+    <div id="content">
+      
+      <div class="toc">
+      <p class="tocTitle">Table of Contents:</p>
+      <ol>
+      <li>
+      <a href="#h1">Getting Started</a>
+      <ol>
+      <li>
+      <a href="#h1_1">The Shipment Builder</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h2">Selecting Sites</a>
+      <ol>
+      <li>
+      <a href="#h2_1">Subsequent Batches</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h3">Selecting Assets</a>
+      <ol>
+      <li>
+      <a href="#h3_1">Info Rollovers</a>
+      </li>
+      <li>
+      <a href="#h3_2">Language Filter</a>
+      </li>
+      <li>
+      <a href="#h3_3">Entering quantities</a>
+      <ol>
+      <li>
+      <a href="#h3_3_1">Ordering by Pack</a>
+      </li>
+      <li>
+      <a href="#h3_3_2">Inventory Warnings</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h3_4">Finishing a Batch</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h4">Reviewing an Order</a>
+      <ol>
+      <li>
+      <a href="#h4_1">Inventory Troubleshooting</a>
+      </li>
+      <li>
+      <a href="#h4_2">Editing Quantities</a>
+      <ol>
+      <li>
+      <a href="#h4_2_1">By Asset</a>
+      </li>
+      <li>
+      <a href="#h4_2_2">By Site</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h4_3">Changing Ship Method</a>
+      </li>
+      </ol>
+      </li>
+      <li>
+      <a href="#h5">Submitting an Order</a>
+      <ol>
+      <li>
+      <a href="#h5_1">Partial Orders</a>
+      </li>
+      </ol></li></ol>
+      </div>
+      
+      <div class="bodytext">
+      <p class="pagetitle">Create New Shipment Order</p>
+      <h1 id="h1"><span class="heading-num">1</span>Getting Started</h1>
+      <p>To Create a New Shipment Order, click the &#8220;Shipment Orders&#8221; tab from within any Study:</p>
+      <p><img title="The Shipment Orders tab" src="../../../images/shipment-orders-01.png" alt="The Shipment Orders tab" /></p>
+      <p>Then, click the &#8220;Create New Shipment Order&#8221; button:</p>
+      <p><img title="Create New Shipment Order button" src="../../../images/shipment-orders-02.png" alt="Create New Shipment Order button" /></p>
+      <p>A dialog will appear asking for:</p>
+      <ol>
+      	<li>A Name for the Order</li>
+      	<li>A Default Ship Method</li>
+      </ol>
+      <p><img title="The New Shipment Order dialog box" src="../../../images/shipment-orders-03.png" alt="The New Shipment Order dialog box" /></p>
+      <p>The Order Name can be anything you choose, as long as it is unique within the Study. We suggest using a descriptive phrase, for example: &#8220;Initial European Distribution&#8221; or &#8220;West Coast Replenishment&#8221;.</p>
+      <p>The Default Ship Method will apply to all Sites added to your Shipment Order. If you know that most or all of your order will need expedited shipping, you can choose an appropriate Ship Method here. You can change the Ship Method for any Site before submitting your Order.</p>
+      <p>Click the &#8220;Create Order&#8221; button to continue.</p>
+      <h2 id="h1_1"><span class="heading-num">1.1</span>The Shipment Builder</h2>
+      <p>Once your Order has been created, you can begin the Shipment Builder process.</p>
+      <p>Items are added to your Shipment Order in batches, as follows:</p>
+      <p><img title="The Order Editor workflow" src="../../../images/shipment-orders-31.png" alt="The Order Editor workflow" /></p>
+      <ol>
+      	<li>Start by selecting a Site, or group of Sites</li>
+      	<li>Select the Assets to ship to those Sites</li>
+      	<li>Review your in-progress Order, where you can:
+      	<ul>
+      		<li>Submit your Order, <em>or</em></li>
+      		<li>Edit Order quantities, <em>or</em></li>
+      		<li>Add additional items to your Order by repeating the steps above.</li>
+      	</ul></li>
+      </ol>
+      <h1 id="h2"><span class="heading-num">2</span>Selecting Sites</h1>
+      <p>Note that initially, your Order is empty. To add items to your Order, click the &#8220;Add to Shipment Order&#8221; button:</p>
+      <p><img title="Add to Shipment Order button" src="../../../images/shipment-orders-04.png" alt="Add to Shipment Order button" /></p>
+      <p>The system displays a list of available Sites for the current Study:</p>
+      <p><a href="../../../images/shipment-orders-05.png" class="zoom" title="The Site Selection screen"><img src="../../../images/shipment-orders-05-thumb.png" alt="" /></a></p>
+      <p class="quiet">[NOTE: you must select at least one Site to continue.]</p>
+      <p>Select the Sites you want to ship to, then click &#8220;Continue to Asset selection&#8221;:</p>
+      <p><img title="Selecting Sites" src="../../../images/shipment-orders-07.png" alt="Selecting Sites" /></p>
+      <h2 id="h2_1"><span class="heading-num">2.1</span>Subsequent Batches</h2>
+      <p>If you are adding additional batches to your Order, the system will highlight Sites that already have Assets selected:</p>
+      <p><img title="Info rollover for a Site w/ Assets already selected" src="../../../images/shipment-orders-32.png" alt="Info rollover for a Site w/ Assets already selected" /></p>
+      <p>You can still select additional Assets to ship to these Sites.</p>
+      <h1 id="h3"><span class="heading-num">3</span>Selecting Assets</h1>
+      <p>The Asset Selection screen displays Assets that can be shipped to the Sites you have selected:</p>
+      <p><a href="../../../images/shipment-orders-08.png" class="zoom" title="The Asset Selection screen"><img src="../../../images/shipment-orders-08-thumb.png" alt="" /></a></p>
+      <h2 id="h3_1"><span class="heading-num">3.1</span>Info Rollovers</h2>
+      <p>If at any point you wish to double-check the Sites you have selected for this batch, a list of current selections is available on the right side of the screen. Hovering your mouse pointer over any Site&#8217;s name will display additional information for that Site:</p>
+      <p><img title="Site Info" src="../../../images/shipment-orders-09.png" alt="Site Info" /></p>
+      <p>Additional information for each Asset is available on the left side of the Asset Selection screen. Hovering your mouse pointer over any preview icon will display a thumbnail and additional information for that Asset:</p>
+      <p><a href="../../../images/shipment-orders-10.png" class="zoom" title="The Asset Info rollover"><img src="../../../images/shipment-orders-10-thumb.png" alt="" /></a></p>
+      <h2 id="h3_2"><span class="heading-num">3.2</span>Language Filter</h2>
+      <p>By default, the system only displays Assets that match the language(s) for the Sites you have selected. You can disable the language filter by clicking the &#8220;Show All Assets (All Languages)&#8221; toggle:</p>
+      <p><a href="../../../images/shipment-orders-11.png" class="zoom" title="The Asset list with language filter disabled"><img src="../../../images/shipment-orders-11-thumb.png" alt="" /></a></p>
+      <p>Clicking &#8220;Show Assets Filtered by Site Language&#8221; will turn the filter back on.</p>
+      <h2 id="h3_3"><span class="heading-num">3.3</span>Entering quantities</h2>
+      <p>Type a number in the &#8220;Qty per Site&#8221; field. Notice how the system automatically calculates the total quantity based on how many Sites are in the current batch:</p>
+      <p><img title="Entering a quantity highlights the row" src="../../../images/shipment-orders-12.png" alt="Entering a quantity highlights the row" /></p>
+      <p>When you enter a quantity for an Asset, its row will automatically highlight, making it easy to see what you&#8217;ve already selected.</p>
+      <h3 id="h3_3_1"><span class="heading-num">3.3.1</span>Ordering by Pack</h3>
+      <p>Some Assets are pre-shrinkwrapped and can easily be ordered by Pack. If an Asset is available in Packs, you will see an &#8220;Order by Pack&#8221; pop-up when you click in, or tab to, the Asset&#8217;s &#8220;Qty per Site&#8221; field:</p>
+      <p><a href="../../../images/shipment-orders-13.png" class="zoom" title="The &quot;Order by Pack&quot; popup"><img src="../../../images/shipment-orders-13-thumb.png" alt="" /></a></p>
+      <p>To order by Pack, simply enter the number of Packs you want shipped to each Site in the popup. The system will automatically calculate the total number of pieces for you:</p>
+      <p><img title="Ordering by Pack calculates the total automatically" src="../../../images/shipment-orders-14.png" alt="Ordering by Pack calculates the total automatically" /></p>
+      <p>You are not required to order Assets in Packs. You can always enter a quantity directly into the &#8220;Qty to Ship&#8221; field.</p>
+      <h3 id="h3_3_2"><span class="heading-num">3.3.2</span>Inventory Warnings</h3>
+      <p>The system will automatically display a warning icon when your batch contains a total quantity request that is greater than available inventory:</p>
+      <p><img title="Insufficient inventory warnings are displayed automatically" src="../../../images/shipment-orders-15.png" alt="Insufficient inventory warnings are displayed automatically" /></p>
+      <p>This is just a warning &#8211; you can still continue to build your Order. The system will check available inventory again when you submit your Order.</p>
+      <h2 id="h3_4"><span class="heading-num">3.4</span>Finishing a Batch</h2>
+      <p>When you are done entering Asset quantities, click the &#8220;Add items to Order&#8221; button to continue:</p>
+      <p><img title="The Add items to Order button" src="../../../images/shipment-orders-16.png" alt="The Add items to Order button" /></p>
+      <p>The Sites &amp; Assets you selected are added to your Order, and you are returned to the Order Editing screen. You can now submit your order, or continue to add additional items.</p>
+      <h1 id="h4"><span class="heading-num">4</span>Reviewing an Order</h1>
+      <p>Once you have added a batch of items, your Order will be displayed, grouped alphabetically by Site:</p>
+      <p><a href="../../../images/shipment-orders-17.png" class="zoom" title="An in-progress Shipment Order, grouped by Site"><img src="../../../images/shipment-orders-17-thumb.png" alt="" /></a></p>
+      <p>You can click the &#8220;Group by Asset&#8221; toggle to switch the view:</p>
+      <p><img title="Group by Site/Asset toggle" src="../../../images/shipment-orders-19.png" alt="Group by Site/Asset toggle" /></p>
+      <p>&#8230;to be grouped by Asset instead:</p>
+      <p><a href="../../../images/shipment-orders-20.png" class="zoom" title="An in-progress Shipment Order, grouped by Asset"><img src="../../../images/shipment-orders-20-thumb.png" alt="" /></a></p>
+      <h2 id="h4_1"><span class="heading-num">4.1</span>Inventory Troubleshooting</h2>
+      <p>When viewing an in-progress Shipment Order, the system will automatically flag Assets with insufficient inventory:</p>
+      <p>If you are viewing your Order grouped by Asset, you can click the warning message:</p>
+      <p><img title="Insufficient inventory warning, Order grouped by Asset" src="../../../images/shipment-orders-21.png" alt="Insufficient inventory warning, Order grouped by Asset" /></p>
+      <p>&#8230; to bring all Assets with insufficient inventory to the top of your screen:</p>
+      <p><img title="Insufficient Inventory Assets brought to the top" src="../../../images/shipment-orders-22.png" alt="Insufficient Inventory Assets brought to the top" /></p>
+      <p>You can edit your requested quantities in either Asset or Site view</p>
+      <h2 id="h4_2"><span class="heading-num">4.2</span>Editing Quantities</h2>
+      <p>To edit the quantities for a Site or Asset, click the &#8220;edit&#8230;&#8221; link next to the &#8220;Qty to Ship&#8221; column:</p>
+      <p><img title="Edit quantities link" src="../../../images/shipment-orders-23.png" alt="Edit quantities link" /></p>
+      <h3 id="h4_2_1"><span class="heading-num">4.2.1</span>By Asset</h3>
+      <p>Editing quantities by Asset displays the current Sites &amp; quantities in your Order. Note the insufficient inventory warning:</p>
+      <p><a href="../../../images/shipment-orders-24.png" class="zoom" title="Editing quantities by Asset, insufficient inventory warning"><img src="../../../images/shipment-orders-24-thumb.png" alt="" /></a></p>
+      <p>By reducing your requested quantity to less than or equal to available inventory, the warning automatically disappears:</p>
+      <p><a href="../../../images/shipment-orders-25.png" class="zoom" title="Reduced quantities, warning removed"><img src="../../../images/shipment-orders-25-thumb.png" alt="" /></a></p>
+      <p>Enter any adjustments in the &#8220;Qty to Ship&#8221; column and click the &#8220;Save Changes&#8221; button to update your Shipping Order.</p>
+      <h3 id="h4_2_2"><span class="heading-num">4.2.2</span>By Site</h3>
+      <p>Editing quantities by Site displays all the Assets matching the Site&#8217;s language, and their currently-requested quantities:</p>
+      <p><a href="../../../images/shipment-orders-26.png" class="zoom" title="Editing quantities by Site"><img src="../../../images/shipment-orders-26-thumb.png" alt="" /></a></p>
+      <p>Assets with insufficient inventory are highlighted in red.</p>
+      <p>Enter any adjustments in the &#8220;Qty to Ship&#8221; column and click the &#8220;Save Changes&#8221; button to update your Shipping Order.</p>
+      <h2 id="h4_3"><span class="heading-num">4.3</span>Changing Ship Method</h2>
+      <p>To change the Ship Method for a Site, first make sure the &#8220;Group by Site&#8221; toggle is selected. Then choose a Ship Method from the menu labeled &#8220;Ship via:&#8221;</p>
+      <p><img title="Ship Method drop-down menu" src="../../../images/shipment-orders-33.png" alt="Ship Method drop-down menu" /></p>
+      <h1 id="h5"><span class="heading-num">5</span>Submitting an Order</h1>
+      <p>Once you are satisfied with your Order, click the &#8220;Submit Order&#8221; button:</p>
+      <p><a href="../../../images/shipment-orders-28.png" class="zoom" title="Submitting a Shipment Order"><img src="../../../images/shipment-orders-28-thumb.png" alt="" /></a></p>
+      <p>If the system doesn&#8217;t detect any problems with your order, you will be presented with a final confirmation dialog:</p>
+      <p><img title="Order confirmation dialog box" src="../../../images/shipment-orders-29.png" alt="Order confirmation dialog box" /></p>
+      <p>Click &#8220;Yes, Submit Order&#8221; to send your Order to Merlin. Otherwise, click the &#8220;Not Yet, Go Back&#8221; button and you will return to the Order Editing screen.</p>
+      <p>Once your Order is successfully submitted, a read-only view of your Order is displayed:</p>
+      <p><a href="../../../images/shipment-orders-30.png" class="zoom" title="A successfully submitted Shipment Order"><img src="../../../images/shipment-orders-30-thumb.png" alt="" /></a></p>
+      <h2 id="h5_1"><span class="heading-num">5.1</span>Partial Orders</h2>
+      <p>If you click the &#8220;Submit Order&#8221; button while insufficient inventory warnings are still displayed, a &#8220;Confirm Partial Order&#8221; dialog is shown:</p>
+      <p><img title="The Confirm Partial Order dialog" src="../../../images/shipment-orders-27.png" alt="The Confirm Partial Order dialog" /></p>
+      <p>You can click the &#8220;Cancel&#8221; button to return to your Order and adjust quantities, or choose from three options for submitting a Partial Order:</p>
+      <ol>
+      	<li>&#8220;Send shipments as soon as possible, including available quantities of low-inventory assets.&#8221;<br />
+      <span class="quiet">This option tells Merlin to ship available inventory now, even if a Site may not receive its requested quantities.</span></li>
+      </ol>
+      <ol>
+      	<li>&#8220;Send any shipments with sufficient inventory now. Send shipments with low-inventory assets when stock is available&#8221;<br />
+      <span class="quiet">This option tells Merlin to ship only if it will completely fulfill a Site&#8217;s requested quantities.</span></li>
+      </ol>
+      <ol>
+      	<li>&#8220;Hold all shipments until all reorder requests are processed&#8221;<br />
+      <span class="quiet">This option tells Merlin not to ship anything until sufficient inventory is available to fulfill the entire Order.</span></li>
+      </ol>
+      <p>With each option, a reorder request is automatically generated and sent to the appropriate parties.</p>
+      </div>
+    </div>
+    <div id="footer">
+      <!-- = breadcrumbs(@page) -->
+    </div>
+  </body>
+</html>
